@@ -6,7 +6,6 @@ import { validateConfig } from './config/validate.config';
 import * as express from 'express';
 import * as compression from 'compression';
 import { env } from './config/env.config';
-import { MicroserviceOptions, Transport } from '@nestjs/microservices';
 declare const module: any;
 
 
