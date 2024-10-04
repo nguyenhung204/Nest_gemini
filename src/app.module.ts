@@ -6,10 +6,13 @@ import { ConfigModule } from '@nestjs/config';
 import { env } from './config/env.config';
 
 @Module({
-  imports: [GeminiModule, ConfigModule.forRoot({
-    isGlobal: true,
-    load: [env]
-  })],
+  imports: [
+    GeminiModule,
+    ConfigModule.forRoot({
+      isGlobal: true,
+      load: [env],
+    }),
+  ],
   controllers: [AppController],
   providers: [AppService],
 })

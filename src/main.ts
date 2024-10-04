@@ -8,7 +8,6 @@ import * as compression from 'compression';
 import { env } from './config/env.config';
 declare const module: any;
 
-
 function setupSwagger(app: NestExpressApplication) {
   const config = new DocumentBuilder()
     .setTitle('Gemini example')
@@ -41,5 +40,3 @@ async function bootstrap() {
   app.listen(env().PORT);
 }
 bootstrap();
-
-

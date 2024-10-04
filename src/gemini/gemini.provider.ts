@@ -20,7 +20,7 @@ export const GeminiProVisionModelProvider: Provider<GenerativeModel> = {
   provide: GEMINI_PRO_VISION_MODEL,
   useFactory: () => {
     const genAI = new GoogleGenerativeAI(env().GEMINI.KEY);
-    console.log(genAI)
+    console.log(genAI);
     return genAI.getGenerativeModel({
       model: env().GEMINI.PRO_VISION_MODEL,
       generationConfig: GENERATION_CONFIG,
